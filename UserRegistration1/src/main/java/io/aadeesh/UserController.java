@@ -22,19 +22,19 @@ public class UserController
 	@Autowired
 	UserRepository urepo;
 	
-	@GetMapping("/home")
+	@RequestMapping("/home")
 	public String home()
 	{
 		return "home";
 	}
 	
-	@GetMapping("/signup")
+	@RequestMapping("/signup")
 	public String getSignup()
 	{
 		return "signup";
 	}
 	
-	@GetMapping("/login")
+	@RequestMapping("/login")
 	public String getLogin()
 	{
 		return "login";
